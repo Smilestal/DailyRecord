@@ -36,3 +36,6 @@ try {
     ex.printStackTrace();
 }
 ```
+
+[okio分析](http://www.baitouwei.com/2015/01/08/okio/)
+[Okio库的使用](https://blog.csdn.net/io_field/article/details/51812054)
