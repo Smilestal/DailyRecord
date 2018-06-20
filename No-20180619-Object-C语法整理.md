@@ -69,6 +69,7 @@ int main() //主函数
 
 ```Objective-C
 /* my first program in Objective-C */
+// my first program in Objective-C
 ```
 
 - 标识符
@@ -103,14 +104,16 @@ int main()
 当编译并执行上述程序，在Linux上产生以下结果：
 
 ```
-Storage size for int : 4 
+Storage size for int : 4
 ```
 
 **浮点型**
+
 下表给出了有关标准的存储大小和取值范围和精度的浮点类型的详细信息：
 ![浮点类型](./images/oc浮点类型.png)
 
 **void类型**
+
 ![void类型](./images/void类型.png)
 
 #### 函数与指针
@@ -205,7 +208,7 @@ int main( )
     // volume of box 1
     volume = [box1 volume];
     NSLog(@"Volume of Box1 : %f", volume);
-    
+
     // volume of box 2
     volume = [box2 volume];
     NSLog(@"Volume of Box2 : %f", volume);
