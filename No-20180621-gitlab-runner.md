@@ -66,12 +66,13 @@ deployment:
     - tags  # 只有在打tag时才会执行
   stage: deploy
   script:
-    - ./gradlew myZip -w
+#    - ./gradlew myZip
+    - zip -q -r -o "unikey-android-sdk-${CI_COMMIT_REF_NAME}.zip" "./unikey-android-sdk-publish" -x "*/\.*" -x "\.*"
   dependencies:
     - staticAnalysis
   artifacts:
     paths:
-     - ../sdk-publish-zip/ # 提供可下载的打包zip文件
+     - unikey-android-sdk-${CI_COMMIT_REF_NAME}.zip # 提供发包的zip文件下载
 ```
 
 yml文件只是对流程进行控制，具体的操作依然需要gradle来实现。配置好yml文件后，再来配置build.gradle文件：
